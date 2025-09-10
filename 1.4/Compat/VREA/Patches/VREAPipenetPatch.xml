@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationRemove">
+  <xpath>Defs/PipeSystem.PipeNetDef[defName="UCE_NeutroamineNet"]</xpath>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+  <xpath>Defs/PipeSystem.PipeNetDef[defName="VREA_NeutroamineNet"]/pipeDefs</xpath>
+  <value>
+   <li>UCE_NeutroaminePipe</li>
+      <li>UCE_UndergroundNeutroaminePipe</li>
+  </value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="UCE_NeutroaminePipe"]/comps/li[1]/pipeNet</xpath>
+  <value>
+   <pipeNet>VREA_NeutroamineNet</pipeNet>
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="UCE_UndergroundNeutroaminePipe"]/comps/li[1]/pipeNet</xpath>
+  <value>
+   <pipeNet>VREA_NeutroamineNet</pipeNet>
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="UCE_NeutroamineTank"]/comps/li[1]/pipeNet</xpath>
+  <value>
+   <pipeNet>VREA_NeutroamineNet</pipeNet>
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="UCE_NeutroamineTap"]/comps/li[1]/pipeNet</xpath>
+  <value>
+   <pipeNet>VREA_NeutroamineNet</pipeNet>
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="UCE_NeutroamineDrain"]/comps/li[1]/pipeNet</xpath>
+  <value>
+   <pipeNet>VREA_NeutroamineNet</pipeNet>
+  </value>
+</Operation>
+
+<!--<Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="UCE_NeutroDistiller"]/comps/li[3]/pipeNet</xpath>
+  <value>
+   <pipeNet>VREA_NeutroamineNet</pipeNet>
+  </value>
+</Operation>-->
+
+<Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="UCE_NeutroDistiller"]/comps/li[3]/results/li[1]/net</xpath>
+  <value>
+   <net>VREA_NeutroamineNet</net>
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="UCE_NeutroDistiller"]/comps/li[4]/pipeNet</xpath>
+  <value>
+   <pipeNet>VREA_NeutroamineNet</pipeNet>
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="UCE_SynthRefiner"]/comps/li[1]/pipeNet</xpath>
+  <value>
+   <pipeNet>VREA_NeutroamineNet</pipeNet>
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="UCE_HyperRefiner"]/comps/li[1]/pipeNet</xpath>
+  <value>
+   <pipeNet>VREA_NeutroamineNet</pipeNet>
+  </value>
+</Operation>
+
+</Patch>

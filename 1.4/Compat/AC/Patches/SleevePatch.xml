@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VFEU_SleeveIncubator"]/comps</xpath>
+  <value>
+    <li Class="PipeSystem.CompProperties_RefillWithPipes">
+  <pipeNet>UCE_NeutroamineNet</pipeNet>
+  <thing>Neutroamine</thing>
+</li>
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="VFEU_SleeveCasket"]/comps</xpath>
+  <value>
+    <li Class="PipeSystem.CompProperties_RefillWithPipes">
+  <pipeNet>UCE_NeutroamineNet</pipeNet>
+  <thing>Neutroamine</thing>
+</li>
+  </value>
+</Operation>
+
+</Patch>
