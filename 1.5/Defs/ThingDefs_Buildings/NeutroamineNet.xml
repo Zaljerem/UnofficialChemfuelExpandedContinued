@@ -21,6 +21,12 @@
     <overlayOptions>
       <overlayColor>(0.37, 0.64, 0.67)</overlayColor>
     </overlayOptions>
+    <linkToRefuelables>
+      <li>
+        <thing>Neutroamine</thing>
+        <ratio>1</ratio>
+      </li>
+    </linkToRefuelables>
   </PipeSystem.PipeNetDef>
 
   <ThingDef ParentName="BuildingBase">
